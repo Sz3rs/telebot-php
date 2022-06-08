@@ -8,9 +8,9 @@ require_once 'TeleBot/Types.php'
 $bot = new Bot('token') // bot initialization 
 
 $bot->command_handler(['start'], function ($msg) use ($bot) { // command start handler
-        $keyboard = new InlineKeyboardMarkup() // inline-keyboard initialization 
+        $keyboard = new InlineKeyboardMarkup() 
         
-        $button = new InlineKeyboardButton('Button Text', 'button_data') // inline-button initialization
+        $button = new InlineKeyboardButton('Button Text', 'button_data') 
         $keyboard->add($button) // add button to keyboard
         
         $bot->send_message($msg->chat->id, 'Hello, world!', $keyboard);
