@@ -10,7 +10,7 @@ $bot = new Bot('token') // bot initialization
 $bot->command_handler(['start'], function ($msg) use ($bot) { // command start handler
         $keyboard = new InlineKeyboardMarkup()
         
-        $button = new InlineKeyboardButton()
+        $button = new InlineKeyboardButton('Button Text', 'button_data')
         $keyboard->add($button)
         
         $bot->send_message($msg->chat->id, 'Hello, world!', $keyboard);
