@@ -2,8 +2,8 @@
 
 ```php
 
-require_once 'Telebot/Bot.php'
-require_once 'Telebot/Types.php'
+require_once 'TeleBot/Bot.php'
+require_once 'TeleBot/Types.php'
 
 $bot = new Bot('token')
 
