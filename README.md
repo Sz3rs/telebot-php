@@ -1,4 +1,5 @@
 <h1>Library for PHP telegram-bot development</h1>
+Example:
 
 ```php
 
