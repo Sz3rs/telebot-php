@@ -12,7 +12,7 @@ class TelegramRequests
 
     function api_request($method, $params = array()): bool|string
     {
-        $url = 'http://localhost:8081/bot' . $this->botToken . '/' . $method;
+        $url = 'https://api.telegram.org/bot' . $this->botToken . '/' . $method;
         return $this->requests->post($url, $data = $params);
     }
 }
